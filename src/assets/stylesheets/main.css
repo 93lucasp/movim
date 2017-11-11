@@ -8225,3 +8225,23 @@ a {
 
 button {
   cursor: pointer; }
+
+.bg-cover, .hero {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.logo {
+  width: 80%; }
+
+#navBar {
+  width: 100%;
+  padding: 1em 0; }
+  #navBar ul {
+    display: none; }
+
+.hero {
+  height: 600px;
+  width: 100%; }
+  .hero--home {
+    background-image: url("/assets/images/home/hero.jpg"); }

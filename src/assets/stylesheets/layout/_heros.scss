@@ -1,0 +1,14 @@
+.hero {
+    @extend .bg-cover;
+    height: 600px;
+    width: 100%;
+    &--home {
+        background-image: url('/assets/images/home/hero.jpg');
+    }
+    &--cartelle {}
+    &--chiSiamo {}
+    &--contact {}
+    &--digital {}
+    &--green {}
+    &--noleggio {}
+}

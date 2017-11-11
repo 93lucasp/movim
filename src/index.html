@@ -10,20 +10,25 @@
 </head>
 
 <body>
-    <!-- <div id="app">
+    <nav class="" id="navBar">
+        <div class="container d-flex align-items-center">
+            <a href="#"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
+            <ul>
+                <vue-item v-for="item in items" v-bind:item="item"></vue-item>
+            </ul>
 
-        <p>
+        </div>
+    </nav>
+    <div class="hero hero--home">
 
-            {{ sayHello() }}
-        </p>
-    </div> -->
-    <div class="container">
-        <h1>ciao</h1>
     </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/vendors.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="./assets/js/vue.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
 
