@@ -11,12 +11,18 @@
 
 <body>
     <nav class="" id="navBar">
-        <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-center position-relative">
             <a href="#"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
-            <ul>
-                <vue-item v-for="item in items" v-bind:item="item"></vue-item>
-            </ul>
-
+            <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
+                <div class="hamburger__box">
+                    <div class="hamburger__inner"></div>
+                </div>
+            </div>
+            <transition name="slide-fade">
+                <ul class="menu" v-if="openMenu">
+                    <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
+                </ul>
+            </transition>
         </div>
     </nav>
     <div class="hero hero--home">

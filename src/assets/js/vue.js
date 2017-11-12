@@ -1,37 +1,47 @@
 var itemsNavbar = [{
         text: 'Chi siamo',
-        link: 'chisiamo.html'
+        link: 'chisiamo.html',
+        class: 'menu__chiSiamo'
     },
     {
         text: 'Rent',
-        link: 'rent.html'
+        link: 'rent.html',
+        class: 'menu__rent'
     },
     {
         text: 'Credit',
-        link: 'credit.html'
+        link: 'credit.html',
+        class: 'menu__credit'
     },
     {
         text: 'Green',
-        link: 'green.html'
+        link: 'green.html',
+        class: 'menu__green'
     },
     {
         text: 'Digital',
-        link: 'digital.html'
+        link: 'digital.html',
+        class: 'menu__digital'
     },
     {
         text: 'Contatti',
-        link: 'contatti.html'
+        link: 'contatti.html',
+        class: 'menu__contatti'
     }
 ];
 
+
+
 Vue.component('vue-item', {
     props: ['item'],
-    template: '<li>  <a :href="item.link"> {{ item.text }} </a>  </li>'
+    template: '<li v-bind:class="item.class">  <a v-bind:href="item.link"> {{ item.text }} </a>  </li>'
 });
 
 new Vue({
     el: '#navBar',
     data: {
-        items: itemsNavbar
+        items: itemsNavbar,
+        openMenu: false,
+        show: true
     }
 });
