@@ -1,3 +1,11 @@
 .home {
-    
+    #navBar {
+        .menu {
+            &__home {
+                a {
+                    color: map-get($colors, blue_light);
+                }
+            }
+        }
+    }
 }

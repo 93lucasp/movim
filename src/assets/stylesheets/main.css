@@ -8233,7 +8233,7 @@ a {
 button {
   cursor: pointer; }
 
-.bg-cover, .hero, .hero--home:after {
+.bg-cover, .bg-arrows-left, .hero, .hero--home:after {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -8242,6 +8242,30 @@ button {
   width: 80%;
   position: relative;
   z-index: 1; }
+
+.lineBold {
+  width: 10%;
+  height: 6px;
+  background-color: #fff; }
+
+.bg-arrows-left {
+  width: 100%;
+  background-image: url("/assets/images/arrows-left.png"); }
+
+.icon {
+  width: 4em; }
+
+.font-size {
+  font-size: .8em; }
+
+.p-t-4 {
+  padding-top: 4em; }
+
+.p-b-4 {
+  padding-bottom: 4em; }
+
+.m-b-4 {
+  margin-bottom: 4em; }
 
 #navBar {
   width: 100%;
@@ -8355,16 +8379,20 @@ button {
   transform: translateX(1000px); }
 
 .hero {
-  height: 500px;
+  height: 600px;
   width: 100%;
-  position: relative; }
+  position: relative;
+  color: #fff; }
   .hero--home {
     background-image: url("/assets/images/home/hero.jpg"); }
     .hero--home:after {
       content: '';
-      background-image: url("/assets/images/arrows.png");
+      background-image: url("/assets/images/arrows-right.png");
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0; }
+
+.home #navBar .menu__home a {
+  color: #19E0FF; }

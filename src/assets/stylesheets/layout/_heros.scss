@@ -1,14 +1,15 @@
 .hero {
     @extend .bg-cover;
-    height: 500px;
+    height: 600px;
     width: 100%;
     position: relative;
+    color: #fff;
     &--home {
         background-image: url('/assets/images/home/hero.jpg');
         &:after {
             @extend .bg-cover;
             content: '';
-            background-image: url('/assets/images/arrows.png');
+            background-image: url('/assets/images/arrows-right.png');
             position: absolute;
             top: 0;
             right: 0;

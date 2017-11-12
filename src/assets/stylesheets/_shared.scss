@@ -9,3 +9,30 @@
     position: relative;
     z-index: 1;
 }
+
+.lineBold {
+    width: 10%;
+    height: 6px;
+    background-color: #fff; 
+}
+.bg-arrows-left {
+    width: 100%;
+    @extend .bg-cover;
+    background-image: url('/assets/images/arrows-left.png');
+
+}
+.icon {
+    width: 4em; 
+}
+.font-size {
+    font-size: .8em;
+}
+.p-t-4 {
+    padding-top: 4em;
+}
+.p-b-4 {
+    padding-bottom: 4em;
+}
+.m-b-4 {
+    margin-bottom: 4em;
+}
