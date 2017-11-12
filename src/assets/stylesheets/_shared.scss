@@ -24,8 +24,11 @@
 .icon {
     width: 4em; 
 }
-.font-size {
+.font-size-08 {
     font-size: .8em;
+}
+.font-size-06 {
+    font-size: .6em;
 }
 .p-t-4 {
     padding-top: 4em;
@@ -35,4 +38,34 @@
 }
 .m-b-4 {
     margin-bottom: 4em;
+}
+
+.borderButton {
+    border: 1px solid;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50px;
+    &--lightBlue {
+        border-color: map-get($colors, blue_light);
+    }
+    .btn {
+        padding-left: 2.2em;
+        padding-right: 2.2em;
+    }
+
+}
+.border-radius-50 {
+    border-radius: 50px;
+}
+
+.bg-blue1 {
+    background-color: map-get($colors, blue_1);
+    color: #fff;
+}
+.box-shadow {
+    box-shadow: 1px 4px 12px 0 rgba(50,71,178,0.27);
+}
+
+.width-80 {
+    width: 80%;
 }

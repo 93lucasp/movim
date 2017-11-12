@@ -9,3 +9,9 @@
         }
     }
 }
+
+.bg-cars {
+    @extend .bg-cover;
+    background-image: url('/assets/images/home/cars.jpg');
+    height: 300px;
+}
