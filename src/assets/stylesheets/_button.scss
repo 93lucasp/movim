@@ -2,7 +2,16 @@
     background-color: map-get($colors, blue_1);
     color: #fff;
     &:hover {
-        background-color: darken(map-get($colors, blue_1),5%);
-        color: darken(#fff,2%);
+        background-color: darken(map-get($colors, blue_1), 5%);
+        color: darken(#fff, 2%);
+    }
+}
+
+.btn-white {
+    background-color: #fff;
+    color: map-get($colors, blue_1);
+    &:hover {
+        background-color: #fff;
+        color: map-get($colors, blue_1);
     }
 }

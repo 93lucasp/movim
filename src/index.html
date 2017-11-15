@@ -10,117 +10,171 @@
 </head>
 
 <body class="home">
-    <nav class="" id="navBar">
-        <div class="container d-flex align-items-center position-relative">
-            <a href="#"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
-            <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
-                <div class="hamburger__box">
-                    <div class="hamburger__inner"></div>
+    <div id="home">
+
+
+        <nav class="navBar">
+            <div class="container d-flex align-items-center position-relative">
+                <a href="#"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
+                <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
+                    <div class="hamburger__box">
+                        <div class="hamburger__inner"></div>
+                    </div>
                 </div>
+                <transition name="slide-fade">
+                    <ul class="menu" v-if="openMenu">
+                        <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
+                    </ul>
+                </transition>
             </div>
-            <transition name="slide-fade">
-                <ul class="menu" v-if="openMenu">
-                    <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
-                </ul>
-            </transition>
-        </div>
-    </nav>
-    <div id="hero">
+        </nav>
+
         <vue-hero class="hero hero--home d-flex align-items-center" v-bind:hero="heros.home"></vue-hero>
-    </div>
-    <div class="bg-arrows-left p-t-4 p-b-4">
-        <div class="container">
-            <div class="row m-b-4">
-                <div class="offset-lg-6 col-lg-4">
-                    <small>01 COSA FACCIAMO</small>
-                    <h3>Cosa offriamo alla <span class="font-weight-bold">tua impresa</span> </h3>
+
+        <div class="bg-arrows-left p-t-4 p-b-4">
+            <div class="container">
+                <div class="row m-b-4">
+                    <div class="offset-lg-6 col-lg-4">
+                        <small>01 COSA FACCIAMO</small>
+                        <h3>Cosa offriamo alla <span class="font-weight-bold">tua impresa</span> </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 px-4 ml-lg-auto text-center">
-                    <img src="/assets/images/icons/map.svg" alt="" class="icon">
-                    <h6 class="font-weight-bold my-2">Nuovi orizzonti</h6>
-                    <p class="font-size-08">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum suscipit quibusdam qui? Quidem, vitae quia debitis eaque totam voluptas</p>
-                </div>
-                <div class="col-lg-3 px-4 text-center">
-                    <img src="/assets/images/icons/map.svg" alt="" class="icon">
-                    <h6 class="font-weight-bold my-2">Nuovi orizzonti</h6>
-                    <p class="font-size-08">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum suscipit quibusdam qui? Quidem, vitae quia debitis eaque totam voluptas</p>
-                </div>
-                <div class="col-lg-3 px-4 mr-lg-auto text-center">
-                    <img src="/assets/images/icons/map.svg" alt="" class="icon">
-                    <h6 class="font-weight-bold my-2">Nuovi orizzonti</h6>
-                    <p class="font-size-08">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum suscipit quibusdam qui? Quidem, vitae quia debitis eaque totam voluptas</p>
+                <div class="row">
+                    <div class="col-lg-3 px-4 ml-lg-auto text-center">
+                        <img src="/assets/images/icons/map.svg" alt="" class="icon">
+                        <h6 class="font-weight-bold my-2">Nuovi orizzonti</h6>
+                        <p class="font-size-08">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum suscipit quibusdam qui? Quidem, vitae quia debitis eaque totam voluptas</p>
+                    </div>
+                    <div class="col-lg-3 px-4 text-center">
+                        <img src="/assets/images/icons/map.svg" alt="" class="icon">
+                        <h6 class="font-weight-bold my-2">Nuovi orizzonti</h6>
+                        <p class="font-size-08">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum suscipit quibusdam qui? Quidem, vitae quia debitis eaque totam voluptas</p>
+                    </div>
+                    <div class="col-lg-3 px-4 mr-lg-auto text-center">
+                        <img src="/assets/images/icons/map.svg" alt="" class="icon">
+                        <h6 class="font-weight-bold my-2">Nuovi orizzonti</h6>
+                        <p class="font-size-08">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum suscipit quibusdam qui? Quidem, vitae quia debitis eaque totam voluptas</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid p-t-4 p-b-4">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="offset-lg-1 col-lg-6">
-                            <small>02 I SERVIZI</small>
-                            <h4 class="font-weight-light">Facile con il <span class="font-weight-bold">noleggio continuativo</span> </h4>
+        <div class="container-fluid p-t-4 p-b-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-6">
+                                <small>02 I SERVIZI</small>
+                                <h4 class="font-weight-light">Facile con il <span class="font-weight-bold">noleggio continuativo</span> </h4>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row bg-cars mb-4"></div>
+                    <div class="row bg-cars mb-4"></div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="offset-lg-1 col-lg-6">
-                            <p class="font-weight-light font-size-08 mb-4">Nuovi modi di far crescere la tua impresa dolor sit amet, consectetur adipiscing elit. Integer facilisis Lorem ipsum dolor sit amet, consectetur </p>
-                            <span class="borderButton borderButton--lightBlue">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-6">
+                                <p class="font-weight-light font-size-08 mb-4">Nuovi modi di far crescere la tua impresa dolor sit amet, consectetur adipiscing elit. Integer facilisis Lorem ipsum dolor sit amet, consectetur </p>
+                                <span class="borderButton borderButton--lightBlue">
                                     <a href="" class="btn btn-blue1 border-radius-50 font-size-08">Scori di più</a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="offset-lg-2 col-lg-3 bg-blue1 p-3 text-center box-shadow">
+                                <h6>Scegli la tua auto</h6>
+                                <p class="font-size-06 font-weight-light">Le migliori marche</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="offset-lg-2 col-lg-3 bg-blue1 p-3 text-center box-shadow">
+                                <h6>Configurala in base alle esigenze</h6>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="offset-lg-2 col-lg-3 bg-blue1 p-3 text-center box-shadow">
+                                <h6>Scegli la tua formula</h6>
+                                <p class="font-size-06 font-weight-light">In base alle esigenze</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-blue1 p-t-4 p-b-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-right">
+                        <img src="/assets/images/home/cartelle.png" alt="" class="width-80">
+                    </div>
+                    <div class="col-lg-3">
+                        <small>02 I SERVIZI</small>
+                        <h5 class="font-weight-light mb-2"> Digitalizzare <span class="font-weight-bold"> cartelle esattoriali</span></h5>
+                        <p class="font-size-08 mb-3">Nuovi modi di far crescere la tua impresa dolor sit amet, consectetur adipiscing elit. Integer facilisis Lorem ipsum dolor sit amet, consectetur </p>
+                        <span class="borderButton borderButton--lightBlue">
+                                <a href="" class="btn btn-white border-radius-50 font-size-08">Scori di più</a>
                             </span>
-                        </div>
-
                     </div>
                 </div>
             </div>
+        </div>
+        <div class=" p-t-4 p-b-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-right">
+                        <img src="/assets/images/home/digital.png" alt="" class="width-80">
+                    </div>
+                    <div class="col-lg-3">
+                        <small>02 I SERVIZI</small>
+                        <h5 class="font-weight-light mb-2"> Digitalizzare <span class="font-weight-bold"> cartelle esattoriali</span></h5>
+                        <p class="font-size-08 mb-3">Nuovi modi di far crescere la tua impresa dolor sit amet, consectetur adipiscing elit. Integer facilisis Lorem ipsum dolor sit amet, consectetur </p>
+                        <span class="borderButton borderButton--lightBlue">
+                                <a href="" class="btn btn-blue1 border-radius-50 font-size-08">Scori di più</a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-arrows-left p-t-4 p-b-4">
+            <div class="container">
+                <div class="row pb-4">
+                    <div class="col-lg-8 mx-lg-auto p-0">
+                        <h3>Mettiti in contatto <br> <span class="font-weight-bold">con noi</span> </h3>
+                    </div>
+                </div>
+                <div class="row">
 
-            <div class="col-lg-6">
-                <div class="container">
-                    <div class="row mb-3">
-                        <div class="offset-lg-2 col-lg-3 bg-blue1 p-3 text-center box-shadow">
-                            <h6>Scegli la tua auto</h6>
-                            <p class="font-size-06 font-weight-light">Le migliori marche</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="offset-lg-2 col-lg-3 bg-blue1 p-3 text-center box-shadow">
-                            <h6>Configurala in base alle esigenze</h6>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="offset-lg-2 col-lg-3 bg-blue1 p-3 text-center box-shadow">
-                            <h6>Scegli la tua formula</h6>
-                            <p class="font-size-06 font-weight-light">In base alle esigenze</p>
+
+                    <div class="col-lg-8 mx-lg-auto bg-blue1 p-6 position-relative">
+                        <div class="arrow-mask"></div>
+                        <div class="row">
+                            <div class="col-lg-4 p-4">
+                                <h5 class="borderDotted borderDotted--white">Torino</h5>
+                                <p>Corso Galileo Ferraris 58/bis, 10128 Torino TO</p>
+                                <p>tel: 011-4535353</p>
+                                <p>info@movim.it</p>
+                            </div>
+                            <div class="col-lg-6 ml-lg-auto">
+                                <div class="bg-white text-center p-4">
+                                    <h4>Vuoi aprire il tuo?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis ultrices sapien, e</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-
-    <div class="bg-blue1 p-t-4 p-b-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-right">
-                    <img src="/assets/images/home/cartelle.png" alt="" class="width-80">
-                </div>
-                <div class="col-lg-3">
-                    <small>02 I SERVIZI</small>
-                    <h5 class="font-weight-light"> Digitalizzare <span class="font-weight-bold"> cartelle esattoriali</span></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/vendors.min.js"></script>

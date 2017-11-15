@@ -15,3 +15,13 @@
     background-image: url('/assets/images/home/cars.jpg');
     height: 300px;
 }
+
+.arrow-mask {
+    @extend .bg-cover;
+    background-image: url('/assets/images/arrows-angles.png');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

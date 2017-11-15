@@ -1,5 +1,4 @@
-var itemsNavbar = [
-    {
+var itemsNavbar = [{
         text: 'Home',
         link: 'home.html',
         class: 'menu__home'
@@ -40,7 +39,8 @@ var heros = {
     green: {
         title: 'Il Futuro per la tua impresadasddasddasd',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    }};
+    }
+};
 
 
 Vue.component('vue-item', {
@@ -50,8 +50,7 @@ Vue.component('vue-item', {
 
 Vue.component('vue-hero', {
     props: ['hero'],
-    template: 
-    '<div>\
+    template: '<div>\
         <div class="container">\
             <div class="row">\
                 <div class="col-lg-4 mx-lg-auto">\
@@ -64,18 +63,13 @@ Vue.component('vue-hero', {
     </div>'
 });
 
-new Vue({
-    el: '#hero',
-    data: {
-        heros: heros
-    }
-});
 
 new Vue({
-    el: '#navBar',
+    el: '#home',
     data: {
         items: itemsNavbar,
         openMenu: false,
-        show: true
+        show: true,
+        heros: heros
     }
 });
