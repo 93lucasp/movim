@@ -4,24 +4,19 @@ var itemsNavbar = [{
         class: 'menu__home'
     },
     {
-        text: 'Rent',
-        link: 'rent.html',
+        text: 'Noleggio',
+        link: 'noleggio.html',
         class: 'menu__rent'
     },
     {
-        text: 'Credit',
-        link: 'credit.html',
-        class: 'menu__credit'
+        text: 'Energy',
+        link: 'energy.html',
+        class: 'menu__energy'
     },
     {
-        text: 'Green',
-        link: 'green.html',
-        class: 'menu__green'
-    },
-    {
-        text: 'Digital',
-        link: 'digital.html',
-        class: 'menu__digital'
+        text: 'Tech',
+        link: 'tech.html',
+        class: 'menu__tech'
     },
     {
         text: 'Contatti',
@@ -33,8 +28,8 @@ var itemsNavbar = [{
 var heros = {
     home: {
         title: 'Il Futuro per',
-        titleEvidence: 'la tua impresa',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        titleEvidence: 'la tua azienda',
+        subTitle: 'Consulenza in vari settori per soddisfare tutti i tuoi bisogni aziendali'
     },
     green: {
         title: 'Il Futuro per la tua impresadasddasddasd',
@@ -66,7 +61,7 @@ Vue.component('vue-footer', {
     template: '<footer class="footer">\
         <div class="container">\
             <div class="row">\
-                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end ">\
+                <div class="col-lg-4 d-flex align-items-center justify-content-lg-start ">\
                     <img src="./assets/images/arrow-dark.svg" alt="">\
                 </div>\
                 <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">\
@@ -102,6 +97,15 @@ Vue.component('vue-footer', {
 
 new Vue({
     el: '#home',
+    data: {
+        items: itemsNavbar,
+        openMenu: false,
+        show: true,
+        heros: heros
+    }
+});
+new Vue({
+    el: '#noleggio',
     data: {
         items: itemsNavbar,
         openMenu: false,

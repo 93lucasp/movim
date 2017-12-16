@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Movim</title>
+    <title></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,103 +10,70 @@
 </head>
 
 <body class="home">
+    <div id="noleggio">
 
-    <div class="owl-carousel bg-blue1 pt-5 pb-5">
-        <div class="container car">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-2">
-                    <div class="bg-white d-flex align-items-center justify-content-center">
-                        <div class="row">
-                            <div class="col-lg-5 mb-4 d-flex align-items-center justify-content-center ">
-                                <img src="./assets/images/noleggio/car1.jpg" alt="" class="car__img">
+
+        <nav class="navBar ">
+            <div class="container d-flex align-items-center position-relative">
+                <a href="#"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
+                <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
+                    <div class="hamburger__box">
+                        <div class="hamburger__inner"></div>
+                    </div>
+                </div>
+                <transition name="slide-fade">
+                    <ul class="menu" v-if="openMenu">
+                        <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
+                    </ul>
+                </transition>
+            </div>
+        </nav>
+
+        <vue-hero class="hero hero--noleggio d-flex align-items-center" v-bind:hero="heros.home"></vue-hero>
+        <div class="bg-arrows-left p-t-4 p-b-4 text-blue">
+            <div class="container">
+                <div class="row m-b-4">
+                    <div class="col-lg-4 offset-lg-2">
+                        <small>01 COSA FACCIAMO</small>
+                        <h3>Cosa offriamo alla <span class="font-weight-bold">tua impresa</span> </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="media">
+                            <img src="/assets/images/icons/car.svg" alt="" class="icon">
+                            <div class="media-body ml-4">
+                                <h5 class="mt-0">Scelgi l’auto</h5>
+                                Scegli l’auto che preferisci fra tutti i marchi (oltre 50).
                             </div>
-                            <div class="col-lg-7 mb-4 d-flex align-items-center justify-content-center ">
-                                <div class=" pr-lg-5">
-                                    <p class="car__row"><span class="font-weight-bold">Anno: </span><span class="font-weight-light">2017</span></p>
-                                    <p class="car__row"><span class="font-weight-bold">Class: </span><span class="font-weight-light">Premium</span></p>
-                                    <p class="car__row"><span class="font-weight-bold">Cambio: </span><span class="font-weight-light">Automatico</span></p>
-                                    <p class="car__row"><span class="font-weight-bold">Caratteristiche: </span><span class="font-weight-light">2200 Diesel - 136 CV</span></p>
-                                    <p class="car__row"><span class="font-weight-bold">Colore: </span><span class="font-weight-light">Silver</span></p>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <div class=" car__model">
-                            Mercedes modello A
                         </div>
                     </div>
-
-                </div>
-                <div class="col-lg-2 ">
-                    <div class="bg-blue2 pt-4 pb-4  text-center d-flex align-items-center justify-content-center ">
-                        <div>
-                            <div class="car__info">
-                                <h6>Anticipo</h6>
-                                <p>2 mesi</p>
+                    <div class="col-lg-5">
+                        <div class="media">
+                            <img src="/assets/images/icons/dash.svg" alt="" class="icon">
+                            <div class="media-body ml-4">
+                                <h5 class="mt-0">Configura le caratteristiche</h5>
+                                Puoi avere la configurazione che preferisci. Contattaci per un preventivo gratuito
                             </div>
-                            <div class="car__info">
-                                <h6>Anticipo</h6>
-                                <p>2 mesi</p>
-                            </div>
-                            <div class="car__info">
-                                <h6>Anticipo</h6>
-                                <p>2 mesi</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 mt-4">
+                        <div class="media">
+                            <img src="/assets/images/icons/key.svg" alt="" class="icon">
+                            <div class="media-body ml-4">
+                                <h5 class="mt-0">Scegli la rata</h5>
+                                A seconda delle caratteristiche che scegli la rata può scendere o salire, possiamo effettuare un preventivo basato sul budget di spesa.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container car">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-2">
-                        <div class="bg-white d-flex align-items-center justify-content-center">
-                            <div class="row">
-                                <div class="col-lg-5 mb-4 d-flex align-items-center justify-content-center ">
-                                    <img src="./assets/images/noleggio/car1.jpg" alt="" class="car__img">
-                                </div>
-                                <div class="col-lg-7 mb-4 d-flex align-items-center justify-content-center ">
-                                    <div class=" pr-lg-5">
-                                        <p class="car__row"><span class="font-weight-bold">Anno: </span><span class="font-weight-light">2017</span></p>
-                                        <p class="car__row"><span class="font-weight-bold">Class: </span><span class="font-weight-light">Premium</span></p>
-                                        <p class="car__row"><span class="font-weight-bold">Cambio: </span><span class="font-weight-light">Automatico</span></p>
-                                        <p class="car__row"><span class="font-weight-bold">Caratteristiche: </span><span class="font-weight-light">2200 Diesel - 136 CV</span></p>
-                                        <p class="car__row"><span class="font-weight-bold">Colore: </span><span class="font-weight-light">Silver</span></p>
-                                    </div>
-    
-                                </div>
-    
-    
-                            </div>
-                            <div class=" car__model">
-                                Mercedes modello A
-                            </div>
-                        </div>
-    
-                    </div>
-                    <div class="col-lg-2 ">
-                        <div class="bg-blue2 pt-4 pb-4  text-center d-flex align-items-center justify-content-center ">
-                            <div>
-                                <div class="car__info">
-                                    <h6>Anticipo</h6>
-                                    <p>2 mesi</p>
-                                </div>
-                                <div class="car__info">
-                                    <h6>Anticipo</h6>
-                                    <p>2 mesi</p>
-                                </div>
-                                <div class="car__info">
-                                    <h6>Anticipo</h6>
-                                    <p>2 mesi</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container car">
+        <div class="bg-blue1 pt-5 pb-5">
+
+
+            <div class="owl-carousel">
+                <div class="container car">
                     <div class="row">
                         <div class="col-lg-6 offset-lg-2">
                             <div class="bg-white d-flex align-items-center justify-content-center">
@@ -122,16 +89,16 @@
                                             <p class="car__row"><span class="font-weight-bold">Caratteristiche: </span><span class="font-weight-light">2200 Diesel - 136 CV</span></p>
                                             <p class="car__row"><span class="font-weight-bold">Colore: </span><span class="font-weight-light">Silver</span></p>
                                         </div>
-        
+
                                     </div>
-        
-        
+
+
                                 </div>
                                 <div class=" car__model">
                                     Mercedes modello A
                                 </div>
                             </div>
-        
+
                         </div>
                         <div class="col-lg-2 ">
                             <div class="bg-blue2 pt-4 pb-4  text-center d-flex align-items-center justify-content-center ">
@@ -154,54 +121,217 @@
                     </div>
                 </div>
                 <div class="container car">
-                        <div class="row">
-                            <div class="col-lg-6 offset-lg-2">
-                                <div class="bg-white d-flex align-items-center justify-content-center">
-                                    <div class="row">
-                                        <div class="col-lg-5 mb-4 d-flex align-items-center justify-content-center ">
-                                            <img src="./assets/images/noleggio/car1.jpg" alt="" class="car__img">
-                                        </div>
-                                        <div class="col-lg-7 mb-4 d-flex align-items-center justify-content-center ">
-                                            <div class=" pr-lg-5">
-                                                <p class="car__row"><span class="font-weight-bold">Anno: </span><span class="font-weight-light">2017</span></p>
-                                                <p class="car__row"><span class="font-weight-bold">Class: </span><span class="font-weight-light">Premium</span></p>
-                                                <p class="car__row"><span class="font-weight-bold">Cambio: </span><span class="font-weight-light">Automatico</span></p>
-                                                <p class="car__row"><span class="font-weight-bold">Caratteristiche: </span><span class="font-weight-light">2200 Diesel - 136 CV</span></p>
-                                                <p class="car__row"><span class="font-weight-bold">Colore: </span><span class="font-weight-light">Silver</span></p>
-                                            </div>
-            
-                                        </div>
-            
-            
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-2">
+                            <div class="bg-white d-flex align-items-center justify-content-center">
+                                <div class="row">
+                                    <div class="col-lg-5 mb-4 d-flex align-items-center justify-content-center ">
+                                        <img src="./assets/images/noleggio/car1.jpg" alt="" class="car__img">
                                     </div>
-                                    <div class=" car__model">
-                                        Mercedes modello A
+                                    <div class="col-lg-7 mb-4 d-flex align-items-center justify-content-center ">
+                                        <div class=" pr-lg-5">
+                                            <p class="car__row"><span class="font-weight-bold">Anno: </span><span class="font-weight-light">2017</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Class: </span><span class="font-weight-light">Premium</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Cambio: </span><span class="font-weight-light">Automatico</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Caratteristiche: </span><span class="font-weight-light">2200 Diesel - 136 CV</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Colore: </span><span class="font-weight-light">Silver</span></p>
+                                        </div>
+
                                     </div>
+
+
                                 </div>
-            
+                                <div class=" car__model">
+                                    Mercedes modello A
+                                </div>
                             </div>
-                            <div class="col-lg-2 ">
-                                <div class="bg-blue2 pt-4 pb-4  text-center d-flex align-items-center justify-content-center ">
-                                    <div>
-                                        <div class="car__info">
-                                            <h6>Anticipo</h6>
-                                            <p>2 mesi</p>
-                                        </div>
-                                        <div class="car__info">
-                                            <h6>Anticipo</h6>
-                                            <p>2 mesi</p>
-                                        </div>
-                                        <div class="car__info">
-                                            <h6>Anticipo</h6>
-                                            <p>2 mesi</p>
-                                        </div>
+
+                        </div>
+                        <div class="col-lg-2 ">
+                            <div class="bg-blue2 pt-4 pb-4  text-center d-flex align-items-center justify-content-center ">
+                                <div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-    </div>
+                </div>
+                <div class="container car">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-2">
+                            <div class="bg-white d-flex align-items-center justify-content-center">
+                                <div class="row">
+                                    <div class="col-lg-5 mb-4 d-flex align-items-center justify-content-center ">
+                                        <img src="./assets/images/noleggio/car1.jpg" alt="" class="car__img">
+                                    </div>
+                                    <div class="col-lg-7 mb-4 d-flex align-items-center justify-content-center ">
+                                        <div class=" pr-lg-5">
+                                            <p class="car__row"><span class="font-weight-bold">Anno: </span><span class="font-weight-light">2017</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Class: </span><span class="font-weight-light">Premium</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Cambio: </span><span class="font-weight-light">Automatico</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Caratteristiche: </span><span class="font-weight-light">2200 Diesel - 136 CV</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Colore: </span><span class="font-weight-light">Silver</span></p>
+                                        </div>
 
+                                    </div>
+
+
+                                </div>
+                                <div class=" car__model">
+                                    Mercedes modello A
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2 ">
+                            <div class="bg-blue2 pt-4 pb-4  text-center d-flex align-items-center justify-content-center ">
+                                <div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container car">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-2">
+                            <div class="bg-white d-flex align-items-center justify-content-center">
+                                <div class="row">
+                                    <div class="col-lg-5 mb-4 d-flex align-items-center justify-content-center ">
+                                        <img src="./assets/images/noleggio/car1.jpg" alt="" class="car__img">
+                                    </div>
+                                    <div class="col-lg-7 mb-4 d-flex align-items-center justify-content-center ">
+                                        <div class=" pr-lg-5">
+                                            <p class="car__row"><span class="font-weight-bold">Anno: </span><span class="font-weight-light">2017</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Class: </span><span class="font-weight-light">Premium</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Cambio: </span><span class="font-weight-light">Automatico</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Caratteristiche: </span><span class="font-weight-light">2200 Diesel - 136 CV</span></p>
+                                            <p class="car__row"><span class="font-weight-bold">Colore: </span><span class="font-weight-light">Silver</span></p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class=" car__model">
+                                    Mercedes modello A
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2 ">
+                            <div class="bg-blue2 pt-4 pb-4  text-center d-flex align-items-center justify-content-center ">
+                                <div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                    <div class="car__info">
+                                        <h6>Anticipo</h6>
+                                        <p>2 mesi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center mt-4">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <p>Nuovi modi di far crescere la tua impresa dolor sit amet, consectetur adipiscing elit. Integer facilisis Lorem ipsum dolor sit amet, consectetur </p>
+                        <span class="borderButton borderButton--lightBlue mt-3">
+                            <a href="" class="btn btn-white border-radius-50 font-size-08">Scori di più</a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container p-t-4 p-b-4">
+                <div class="row pb-4 text-blue">
+                        <div class="col-lg-9 mx-auto p-lg-0 text-center text-lg-left">
+                            <h3>Mettiti in contatto <br> <span class="font-weight-bold">con noi</span> </h3>
+                        </div>
+                    </div>
+            <div class="row">
+                <div class="col-lg-3 ml-lg-auto">
+                    <div class="carList">
+                        <div class="carList__header" style="background-image: url('./assets/images/noleggio/car2.jpg')">
+
+                        </div>
+                        <div class="carList__footer bg-blue1">
+                            <p>Ford</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="carList">
+                        <div class="carList__header" style="background-image: url('./assets/images/noleggio/car3.jpg')">
+
+                        </div>
+                        <div class="carList__footer bg-blue1">
+                            <p>Ford</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mr-lg-auto">
+                    <div class="carList">
+                        <div class="carList__header" style="background-image: url('./assets/images/noleggio/car4.jpg')">
+
+                        </div>
+                        <div class="carList__footer bg-blue1">
+                            <div class="model">
+                                <p>Ford open sans</p>
+                            </div>
+                            <div class="price">
+                                <p> 90€/m</p>
+                            </div>
+                                    
+                                   
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-4 text-blue">
+                    <div class="col-lg-9 mx-auto p-lg-0 text-center text-lg-left">
+                        <div class="row">
+                            <div class="col-lg-6 mt-4">
+                                <p>Nuovi modi di far crescere la tua impresa dolor sit amet, consectetur adipiscing elit. Integer facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis ultrices sapien, eu vestibulum sem imperdiet quis. Suspendisse condimentum leo eu odio maximus. Ut luctus felis nibh.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <vue-footer></vue-footer>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/vendors.min.js"></script>

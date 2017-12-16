@@ -5901,7 +5901,12 @@ img {
   align-items: center;
   justify-content: center; }
 
-.bg-cover, .bg-arrows-left, .hero, .hero--home:after, .bg-cars, .arrow-mask {
+.cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.bg-cover, .bg-arrows-left, .hero, .hero--home:before, .bg-cars, .arrow-mask {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -5962,6 +5967,27 @@ img {
   .borderButton .btn {
     padding-left: 2.2em;
     padding-right: 2.2em; }
+
+.text-blue {
+  color: #3247B2; }
+
+.carList__header {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15em; }
+
+.carList__footer {
+  padding: 8px 15px; }
+  .carList__footer .model {
+    width: 70%;
+    border-right: 1px solid #fff; }
+  .carList__footer .price {
+    width: 20%; }
+  .carList__footer .model, .carList__footer .price {
+    display: inline-block;
+    padding: 0 5px; }
 
 .car .bg-white, .car .bg-blue2 {
   height: 18em;
@@ -6034,6 +6060,9 @@ img {
 .owl-next {
   right: 10%; }
 
+.icon {
+  width: 7em; }
+
 .btn-blue1 {
   background-color: #3247B2;
   color: #fff; }
@@ -6047,6 +6076,9 @@ img {
   .btn-white:hover {
     background-color: #fff;
     color: #3247B2; }
+
+.icon {
+  width: 7em; }
 
 .navBar {
   width: 100%;
@@ -6162,13 +6194,23 @@ img {
   transform: translateX(1000px); }
 
 .hero {
-  height: 600px;
+  height: 500px;
   width: 100%;
   position: relative;
   color: #fff; }
+  .hero:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60%;
+    height: 10px;
+    background-color: #232C60;
+    z-index: 1; }
   .hero--home {
+    height: 600px;
     background-image: url("/assets/images/home/hero.jpg"); }
-    .hero--home:after {
+    .hero--home:before {
       content: '';
       background-image: url("/assets/images/arrows-right.png");
       position: absolute;
@@ -6176,6 +6218,10 @@ img {
       right: 0;
       bottom: 0;
       left: 0; }
+    .hero--home:after {
+      display: none; }
+  .hero--noleggio {
+    background-image: url("/assets/images/noleggio/hero.jpg"); }
 
 .footer {
   background-color: #F9F9F9;

@@ -1,12 +1,23 @@
 .hero {
     @extend .bg-cover;
-    height: 600px;
+    height: 500px;
     width: 100%;
     position: relative;
     color: #fff;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 60%;
+        height: 10px;
+        background-color:#232C60;
+        z-index: 1;
+    }
     &--home {
+        height: 600px;
         background-image: url('/assets/images/home/hero.jpg');
-        &:after {
+        &:before {
             @extend .bg-cover;
             content: '';
             background-image: url('/assets/images/arrows-right.png');
@@ -17,11 +28,17 @@
             left:0;
 
         }
+        &:after {
+            display: none;
+        }
+    }
+    &--noleggio {
+        background-image: url('/assets/images/noleggio/hero.jpg');
     }
     &--cartelle {}
     &--chiSiamo {}
     &--contact {}
     &--digital {}
     &--green {}
-    &--noleggio {}
+   
 }
