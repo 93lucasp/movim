@@ -1,3 +1,8 @@
+.position-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .bg-cover {
     background-size: cover;
     background-position: center center;
@@ -21,7 +26,9 @@
     @extend .bg-cover;
     background-image: url('/assets/images/arrows-left.png');
 }
-
+.height-18 {
+    height: 18em;
+}
 .icon {
     width: 4em;
 }
@@ -40,6 +47,9 @@
 
 .p-6 {
     padding: 6em;
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+        padding:2em;
+    }
 }
 
 .p-b-4 {
@@ -70,16 +80,61 @@
         padding-right: 2.2em;
     }
 }
+.car {
+    .bg-white,.bg-blue2 {
+        height: 18em;
+        position: relative
+    }
+    .bg-white {
+        @media screen and (max-width: map-get($grid-breakpoints, md)) {
+            height: 33em;
+        }
+    }
+    .bg-blue2 {
+        @media screen and (max-width: map-get($grid-breakpoints, md)) {
+            height: 12em;
+        }
+    }
+    &__img {
 
+    }
+    &__info {
+        margin-bottom: 1em;
+        h6 {
+            color: #19E0FF;
+            
+        }
+    }
+    &__row {
+        border-bottom: 1px solid #3247B2;
+        margin-bottom: 5px;
+    }
+    &__model {
+        background-color:#232C60;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        right:0;
+        text-align: center;
+        padding: 8px 0; 
+        color: #fff;
+
+    }
+}
 .border-radius-50 {
     border-radius: 50px;
 }
-
+.height-100 {
+    height: 100%;
+}
 .bg-blue1 {
     background-color: map-get($colors, blue_1);
     color: #fff;
 }
-
+.bg-blue2 {
+    background-color:#232C60;
+    color: #fff;
+}
 .bg-white {
     background-color: #fff;
     color: map-get($colors, blue_1);
@@ -92,3 +147,24 @@
 .width-80 {
     width: 80%;
 }
+.owl-prev,.owl-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #19E0FF;
+    border-radius: 100%;
+    top: calc(50% - 20px);
+    @extend .position-center;
+    color: #fff;
+    font-size: 20px;
+    
+}
+.owl-prev {
+    left: 10%;
+}
+.owl-next {
+    right: 10%;
+}
+// .owl-item {
+//     height: 20em!important;
+// }

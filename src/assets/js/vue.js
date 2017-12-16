@@ -62,7 +62,43 @@ Vue.component('vue-hero', {
         </div>\
     </div>'
 });
-
+Vue.component('vue-footer', {
+    template: '<footer class="footer">\
+        <div class="container">\
+            <div class="row">\
+                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end ">\
+                    <img src="./assets/images/arrow-dark.svg" alt="">\
+                </div>\
+                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">\
+                    <ul>\
+                        <li>\
+                            <a href="">Chi siamo</a>\
+                        </li>\
+                        <li>\
+                            <a href="">Dove siamo</a>\
+                        </li>\
+                        <li>\
+                            <a href="">Contatti</a>\
+                        </li>\
+                    </ul>\
+                </div>\
+                <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">\
+                    <ul class="social">\
+                        <li>\
+                            <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>\
+                        </li>\
+                        <li>\
+                            <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>\
+                        </li>\
+                        <li>\
+                            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>\
+                        </li>\
+                    </ul>\
+                </div>\
+            </div>\
+        </div>\
+    </footer>'
+});
 
 new Vue({
     el: '#home',
