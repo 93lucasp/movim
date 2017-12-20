@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+</head>
+
+<body class="energy">
+    <div id="home">
+
+
+        <nav class="navBar ">
+            <div class="container d-flex align-items-center position-relative">
+                <a href="/"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
+                <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
+                    <div class="hamburger__box">
+                        <div class="hamburger__inner"></div>
+                    </div>
+                </div>
+                <transition name="slide-fade">
+                    <ul class="menu" v-if="openMenu">
+                        <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
+                    </ul>
+                </transition>
+            </div>
+        </nav>
+
+        <vue-hero class="hero hero--energy d-flex align-items-center" v-bind:hero="heros.energy"></vue-hero>
+
+        <div class="bg-arrows-left p-t-4 p-b-4">
+            <div class="container">
+                <div class="row m-b-4">
+                    <div class="col-lg-4 offset-lg-1 text-center text-lg-left ">
+                        <h3>Cos’è?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1 text-center text-lg-left mb-4">
+
+                        <p class="font-size-08 mb-2">Si intendono tutte quelle modifiche che portano al miglioramento in termini di produzione e consumo di energia da parte di un impianto/azienda.
+                        </p>
+                        <p class="font-size-08 mb-2">L'efficientamento energetico, oltre ad essere un investimento che aiuta a ridurre l’inquinamento della tua struttura è un passo verso il risparmio futuro della stessa nel tempo?</p>
+
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-1 mt-4 mb-4 text-center text-lg-left">
+                        <div class="bg-blue1 p-5 position-relative">
+                            <p class="font-size-08 mb-2">Cosa può essere considerato risparmio energetico?</p>
+                            <p class="font-size-08">Tutto quello che potrebbe portare un miglioramento alla produzione o al consumo dell’azienda, come ad esempio pannelli fotovoltaici, luci al led oppure caldaie.
+                            </p>
+                            <div class="bg-absolute">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1 mt-4 mx-auto text-center ">
+                        <p class="font-size-08 mb-3">Sei interessato ad un’analisi gratuita per la tua azienda?
+                        </p>
+                        <span class="borderButton borderButton--lightBlue">
+                            <a href="/noleggio.html" class="btn btn-blue1 border-radius-50 font-size-08">Scrivici</a>
+                        </span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <vue-footer></vue-footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendors.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="./assets/js/vue.js"></script>
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+
+</html>

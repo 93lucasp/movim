@@ -5901,7 +5901,7 @@ img {
   align-items: center;
   justify-content: center; }
 
-.cover {
+.cover, .bg-absolute {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -6090,7 +6090,7 @@ img {
   .navBar .menu {
     position: fixed;
     width: 50%;
-    height: 600px;
+    height: 500px;
     top: 0;
     right: 0;
     background-color: rgba(56, 69, 137, 0.8);
@@ -6222,6 +6222,8 @@ img {
       display: none; }
   .hero--noleggio {
     background-image: url("/assets/images/noleggio/hero.jpg"); }
+  .hero--energy {
+    background-image: url("/assets/images/energy/hero.jpg"); }
 
 .footer {
   background-color: #F9F9F9;
@@ -6234,8 +6236,10 @@ img {
       display: inline-block;
       margin: 0 5px; }
 
-.home #navBar .menu__home a {
-  color: #19E0FF; }
+.home .navBar .menu {
+  height: 600px; }
+  .home .navBar .menu__home a {
+    color: #19E0FF; }
 
 .bg-cars {
   background-image: url("/assets/images/home/cars.jpg");
@@ -6252,3 +6256,11 @@ img {
 .img-car {
   width: 12em;
   max-width: 100%; }
+
+.bg-absolute {
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  background-image: url("/assets/images/energy/energy.jpg");
+  right: -6em;
+  top: calc(50% - 4em); }

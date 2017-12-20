@@ -31,9 +31,14 @@ var heros = {
         titleEvidence: 'la tua azienda',
         subTitle: 'Consulenza in vari settori per soddisfare tutti i tuoi bisogni aziendali'
     },
-    green: {
+    noleggio: {
         title: 'Il Futuro per la tua impresadasddasddasd',
+        titleEvidence: 'la tua azienda',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },
+    energy: {
+        title: 'Efficenta la tua azienda',
+        subTitle: 'Garantisci un risparmio alla tua futura impresa'
     }
 };
 

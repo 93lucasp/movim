@@ -1,0 +1,9 @@
+.bg-absolute {
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    @extend .cover;
+    background-image: url('/assets/images/energy/energy.jpg');
+    right: -6em;
+    top:  calc(50% - 4em);
+}
