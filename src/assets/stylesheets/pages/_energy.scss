@@ -6,4 +6,21 @@
     background-image: url('/assets/images/energy/energy.jpg');
     right: -6em;
     top:  calc(50% - 4em);
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+        position: relative;width:70%;
+        margin:0 auto;
+        right: initial;
+        margin-top: 1em;
+    }
+}
+.energy {
+    .navBar {
+        .menu {
+            &__energy {
+                a {
+                    color: map-get($colors, blue_light);
+                }
+            }
+        }
+    }
 }

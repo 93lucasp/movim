@@ -1,22 +1,17 @@
 var itemsNavbar = [{
         text: 'Home',
-        link: 'home.html',
+        link: 'index.html',
         class: 'menu__home'
     },
     {
         text: 'Noleggio',
         link: 'noleggio.html',
-        class: 'menu__rent'
+        class: 'menu__noleggio'
     },
     {
         text: 'Energy',
         link: 'energy.html',
         class: 'menu__energy'
-    },
-    {
-        text: 'Tech',
-        link: 'tech.html',
-        class: 'menu__tech'
     },
     {
         text: 'Contatti',
@@ -32,9 +27,9 @@ var heros = {
         subTitle: 'Consulenza in vari settori per soddisfare tutti i tuoi bisogni aziendali'
     },
     noleggio: {
-        title: 'Il Futuro per la tua impresadasddasddasd',
-        titleEvidence: 'la tua azienda',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        title: 'Passa al noleggio a',
+        titleEvidence: 'lungo termine',
+        subTitle: 'Rata certa e fissa, tutti i modelli disponibili.'
     },
     energy: {
         title: 'Efficenta la tua azienda',
@@ -66,7 +61,7 @@ Vue.component('vue-footer', {
     template: '<footer class="footer">\
         <div class="container">\
             <div class="row">\
-                <div class="col-lg-4 d-flex align-items-center justify-content-lg-start ">\
+                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start ">\
                     <img src="./assets/images/arrow-dark.svg" alt="">\
                 </div>\
                 <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">\
@@ -101,16 +96,7 @@ Vue.component('vue-footer', {
 });
 
 new Vue({
-    el: '#home',
-    data: {
-        items: itemsNavbar,
-        openMenu: false,
-        show: true,
-        heros: heros
-    }
-});
-new Vue({
-    el: '#noleggio',
+    el: '#app',
     data: {
         items: itemsNavbar,
         openMenu: false,

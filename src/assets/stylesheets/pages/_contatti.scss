@@ -1,11 +1,8 @@
-.img-car {
-    width: 12em;
-    max-width: 100%;
-}
-.noleggio {
+
+.contatti {
     .navBar {
         .menu {
-            &__noleggio {
+            &__contatti {
                 a {
                     color: map-get($colors, blue_light);
                 }

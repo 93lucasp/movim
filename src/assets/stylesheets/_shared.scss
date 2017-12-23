@@ -125,7 +125,7 @@
     }
     .bg-blue2 {
         @media screen and (max-width: map-get($grid-breakpoints, md)) {
-            height: 12em;
+            height: 16em;
         }
     }
     &__img {
@@ -135,6 +135,15 @@
         margin-bottom: 1em;
         h6 {
             color: #19E0FF;
+            
+        }
+    }
+    &__price {
+        margin-bottom: 1em;
+        h6 {
+            color: #fff;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #19E0FF;
             
         }
     }
@@ -151,6 +160,7 @@
         text-align: center;
         padding: 8px 0; 
         color: #fff;
+       
 
     }
 }

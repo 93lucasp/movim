@@ -39,8 +39,8 @@
         }
     }
     .inner {
-        width: 35px;
-        height: 4px;
+        width: 32px;
+        height: 3px;
         background-color: #fff;
         border-radius: 4px;
         position: absolute;
@@ -74,8 +74,8 @@
             opacity: 0.9;
         }
         &__box {
-            width: 35px;
-            height: 35px;
+            width: 32px;
+            height: 32px;
             display: inline-block;
             position: relative;
         }
@@ -84,7 +84,7 @@
             display: block;
             top: 50%;
             top: auto;
-            bottom: 6px;
+            bottom: 5px;
             transition-duration: 0.13s;
             transition-delay: 0.13s;
             transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -117,7 +117,7 @@
                 }
                 &:before {
                     top: 0;
-                    width: 35px;
+                    width: 32px;
                     transform: rotate(-90deg);
                     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
                 }

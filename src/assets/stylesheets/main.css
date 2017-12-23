@@ -5999,12 +5999,19 @@ img {
 
 @media screen and (max-width: 768px) {
   .car .bg-blue2 {
-    height: 12em; } }
+    height: 16em; } }
 
 .car__info {
   margin-bottom: 1em; }
   .car__info h6 {
     color: #19E0FF; }
+
+.car__price {
+  margin-bottom: 1em; }
+  .car__price h6 {
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #19E0FF; }
 
 .car__row {
   border-bottom: 1px solid #3247B2;
@@ -6115,8 +6122,8 @@ img {
           text-decoration: none;
           color: #19E0FF; }
   .navBar .inner, .navBar .hamburger__inner, .navBar .hamburger__inner:before, .navBar .hamburger__inner:after {
-    width: 35px;
-    height: 4px;
+    width: 32px;
+    height: 3px;
     background-color: #fff;
     border-radius: 4px;
     position: absolute;
@@ -6148,15 +6155,15 @@ img {
     .navBar .hamburger:hover {
       opacity: 0.9; }
     .navBar .hamburger__box {
-      width: 35px;
-      height: 35px;
+      width: 32px;
+      height: 32px;
       display: inline-block;
       position: relative; }
     .navBar .hamburger__inner {
       display: block;
       top: 50%;
       top: auto;
-      bottom: 6px;
+      bottom: 5px;
       transition-duration: 0.13s;
       transition-delay: 0.13s;
       transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
@@ -6181,7 +6188,7 @@ img {
         transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
       .navBar .hamburger--active .hamburger__inner:before {
         top: 0;
-        width: 35px;
+        width: 32px;
         transform: rotate(-90deg);
         transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
@@ -6224,6 +6231,8 @@ img {
     background-image: url("/assets/images/noleggio/hero.jpg"); }
   .hero--energy {
     background-image: url("/assets/images/energy/hero.jpg"); }
+  .hero--contacts {
+    background-image: url("/assets/images/contacts/hero.jpg"); }
 
 .footer {
   background-color: #F9F9F9;
@@ -6257,6 +6266,9 @@ img {
   width: 12em;
   max-width: 100%; }
 
+.noleggio .navBar .menu__noleggio a {
+  color: #19E0FF; }
+
 .bg-absolute {
   width: 8em;
   height: 8em;
@@ -6264,3 +6276,16 @@ img {
   background-image: url("/assets/images/energy/energy.jpg");
   right: -6em;
   top: calc(50% - 4em); }
+  @media screen and (max-width: 768px) {
+    .bg-absolute {
+      position: relative;
+      width: 70%;
+      margin: 0 auto;
+      right: initial;
+      margin-top: 1em; } }
+
+.energy .navBar .menu__energy a {
+  color: #19E0FF; }
+
+.contatti .navBar .menu__contatti a {
+  color: #19E0FF; }

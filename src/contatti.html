@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+</head>
+
+<body class="contatti">
+    <div id="app">
+
+
+        <nav class="navBar ">
+            <div class="container d-flex align-items-center position-relative">
+                <a href="/"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
+                <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
+                    <div class="hamburger__box">
+                        <div class="hamburger__inner"></div>
+                    </div>
+                </div>
+                <transition name="slide-fade">
+                    <ul class="menu" v-if="openMenu">
+                        <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
+                    </ul>
+                </transition>
+            </div>
+        </nav>
+
+        <vue-hero class="hero hero--contacts d-flex align-items-center" v-bind:hero="heros.energy"></vue-hero>
+
+        <div class="bg-arrows-left p-t-4 p-b-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto bg-blue1 p-6 position-relative">
+                        <div class="arrow-mask"></div>
+                        <div class="row">
+                            <div class="col-lg-4 p-4">
+                                <h5 class="borderDotted borderDotted--white">Torino</h5>
+                                <p>Corso Galileo Ferraris 58/bis, 10128 Torino TO</p>
+                                <p>tel: 011-4535353</p>
+                                <p>info@movim.it</p>
+                            </div>
+                            <div class="col-lg-6 ml-lg-auto">
+                                <div class="bg-white text-center p-4">
+                                    <h4>Vuoi aprire il tuo?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis ultrices sapien, e</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <vue-footer></vue-footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendors.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="./assets/js/vue.js"></script>
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+
+</html>
