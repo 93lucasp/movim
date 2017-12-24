@@ -14,6 +14,11 @@ var itemsNavbar = [{
         class: 'menu__energy'
     },
     {
+        text: 'Tech',
+        link: 'tech.html',
+        class: 'menu__texh'
+    },
+    {
         text: 'Contatti',
         link: 'contatti.html',
         class: 'menu__contatti'

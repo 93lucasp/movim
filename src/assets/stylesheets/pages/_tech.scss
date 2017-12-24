@@ -1,0 +1,41 @@
+
+.tech {
+    .navBar {
+        .menu {
+            &__tech {
+                a {
+                    color: map-get($colors, blue_light);
+                }
+            }
+        }
+    }
+    .cont-video {
+        height: 30em;
+    }
+    .bg-absolute-video {
+        @extend .cover;
+        background-image: url('/assets/images/tech/video.jpg');
+        width: 20em;
+        height: 20em;
+        position: absolute;
+        left: -10em;
+        top:  calc(50% - 10em);
+        @media screen and (max-width: map-get($grid-breakpoints, md)) {
+           left: 15px;
+           right: 15px;
+        }
+    }
+    .bg-absolute-chat {
+        @extend .cover;
+        background-image: url('/assets/images/tech/chat.jpg');
+        width: 20em;
+        height: 20em;
+        position: absolute;
+        left: -10em;
+        top:  calc(50% - 10em);
+        @media screen and (max-width: map-get($grid-breakpoints, md)) {
+            left: 15px;
+            right: 15px;
+         }
+    }
+}

@@ -1,0 +1,147 @@
+<html>
+    
+    <head>
+        <title></title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    </head>
+    
+    <body class="tech">
+        <div id="app">
+    
+    
+            <nav class="navBar ">
+                <div class="container d-flex align-items-center position-relative">
+                    <a href="/"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
+                    <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
+                        <div class="hamburger__box">
+                            <div class="hamburger__inner"></div>
+                        </div>
+                    </div>
+                    <transition name="slide-fade">
+                        <ul class="menu" v-if="openMenu">
+                            <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
+                        </ul>
+                    </transition>
+                </div>
+            </nav>
+    
+            <vue-hero class="hero hero--energy d-flex align-items-center" v-bind:hero="heros.energy"></vue-hero>
+    
+            <div class="bg-arrows-left p-t-4 p-b-4">
+                <div class="container">
+                    <div class="row m-b-4">
+                        <div class="col-lg-4 offset-lg-1 text-center text-lg-left ">
+                            <h3>Presenta la tua azienda
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 offset-lg-1 text-center text-lg-left mb-4">
+    
+                            <p class="font-size-08 mb-2">Presentarsi è importante e noi possiamo aiutarti a farlo al meglio.
+                                Fai conoscere al mondo un lato di te che nessuno ha mai visto. Offriamo ai nostri clienti un servizio di video continuativi in modo da comunicare bene ed in modo continuativo.
+                                
+                            </p>
+                            <p class="font-size-08 mb-2">Ogni settimana un nuovo video su di te. Crea una vera e propria community attorno alla tua azienda, persone interessate a chi sei, cosa fai e soprattutto a cosa vendi.
+                            </p>
+                            <h6 class="mb-2 mt-4">Argomenti</h6>
+                            <p class="font-size-08 mb-2">Ogni settimana un nuovo argomento, portando l’attenzione dei tuoi follower dove è più importante per te: i tuoi prodotti o servizi, la tua struttura, il tuo team o persino l’andamento della tua azienda stessa.
+                            </p>
+                            <p class="font-size-08 font-weight-bold">Più visibilità significa più vendite</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 mt-4 mb-4 ml-auto bg-gray  text-center text-lg-left">
+                            <div class="cont-video p-5 position-relative">
+                                
+                                <div class="bg-absolute-video">
+    
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-lg-5 offset-lg-1 mt-4 mx-auto text-center ">
+                            <p class="font-size-08 mb-3">Sei interessato ad un’analisi gratuita per la tua azienda?
+                            </p>
+                            <span class="borderButton borderButton--lightBlue">
+                                <a href="/noleggio.html" class="btn btn-blue1 border-radius-50 font-size-08">Scrivici</a>
+                            </span>
+
+    
+                        </div>
+                    </div> -->
+                </div>
+
+                
+            </div>
+            <div class="container">
+                <div class="row m-b-4">
+                    <div class="col-lg-6 mx-auto text-center text-lg-right ">
+                        <h3>Chatbot
+                            
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto text-center text-lg-right mb-4">
+
+                        <p class="font-size-08 mb-2">Un chatbot è un’intelligenza artificiale che risponde autonomamente alle domande degli utenti. 
+                            
+                            
+                        </p>
+                        <p class="font-size-08 mb-2">Le persone, scrivendo direttamente alla tua pagina facebook potranno scoprire chi sei, cosa fai, porre domande e ricevere risposte immediate
+                        </p>
+                        <p class="font-size-08 mb-2">Vuoi provare il nostro? <a href="m.me/movim">Prova</a> 
+                        </p>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 mt-4 mb-4 ml-auto bg-gray  text-center text-lg-left">
+                        <div class="cont-video p-5 position-relative">
+                            
+                            <div class="bg-absolute-chat">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-lg-5 offset-lg-1 mt-4 mx-auto text-center ">
+                        <p class="font-size-08 mb-3">Sei interessato ad un’analisi gratuita per la tua azienda?
+                        </p>
+                        <span class="borderButton borderButton--lightBlue">
+                            <a href="/noleggio.html" class="btn btn-blue1 border-radius-50 font-size-08">Scrivici</a>
+                        </span>
+
+
+                    </div>
+                </div> -->
+            </div>
+    
+            <vue-footer></vue-footer>
+        </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/js/vendors.min.js"></script>
+        <script type="text/javascript" src="./assets/js/vue-dep.js"></script>
+        <script type="text/javascript" src="./assets/js/vue.js"></script>
+        <script type="text/javascript" src="./assets/js/app.js"></script>
+    </body>
+    
+    </html>

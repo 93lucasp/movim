@@ -5901,7 +5901,7 @@ img {
   align-items: center;
   justify-content: center; }
 
-.cover, .bg-absolute {
+.cover, .bg-absolute, .tech .bg-absolute-video, .tech .bg-absolute-chat {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -6044,6 +6044,9 @@ img {
 .bg-white {
   background-color: #fff;
   color: #3247B2; }
+
+.bg-gray {
+  background-color: #f8f8f8; }
 
 .box-shadow {
   box-shadow: 1px 4px 12px 0 rgba(50, 71, 178, 0.27); }
@@ -6215,7 +6218,7 @@ img {
     background-color: #232C60;
     z-index: 1; }
   .hero--home {
-    height: 600px;
+    height: 800px;
     background-image: url("/assets/images/home/hero.jpg"); }
     .hero--home:before {
       content: '';
@@ -6233,6 +6236,8 @@ img {
     background-image: url("/assets/images/energy/hero.jpg"); }
   .hero--contacts {
     background-image: url("/assets/images/contacts/hero.jpg"); }
+  .hero--tech {
+    background-image: url("/assets/images/tech/hero.jpg"); }
 
 .footer {
   background-color: #F9F9F9;
@@ -6246,7 +6251,7 @@ img {
       margin: 0 5px; }
 
 .home .navBar .menu {
-  height: 600px; }
+  height: 800px; }
   .home .navBar .menu__home a {
     color: #19E0FF; }
 
@@ -6286,6 +6291,36 @@ img {
 
 .energy .navBar .menu__energy a {
   color: #19E0FF; }
+
+.tech .navBar .menu__tech a {
+  color: #19E0FF; }
+
+.tech .cont-video {
+  height: 30em; }
+
+.tech .bg-absolute-video {
+  background-image: url("/assets/images/tech/video.jpg");
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  left: -10em;
+  top: calc(50% - 10em); }
+  @media screen and (max-width: 768px) {
+    .tech .bg-absolute-video {
+      left: 15px;
+      right: 15px; } }
+
+.tech .bg-absolute-chat {
+  background-image: url("/assets/images/tech/chat.jpg");
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  left: -10em;
+  top: calc(50% - 10em); }
+  @media screen and (max-width: 768px) {
+    .tech .bg-absolute-chat {
+      left: 15px;
+      right: 15px; } }
 
 .contatti .navBar .menu__contatti a {
   color: #19E0FF; }

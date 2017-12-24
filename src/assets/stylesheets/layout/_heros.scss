@@ -15,7 +15,7 @@
         z-index: 1;
     }
     &--home {
-        height: 600px;
+        height: 800px;
         background-image: url('/assets/images/home/hero.jpg');
         &:before {
             @extend .bg-cover;
@@ -41,7 +41,7 @@
     &--cartelle {}
     &--chiSiamo {}
     &--contacts {background-image: url('/assets/images/contacts/hero.jpg');}
-    &--digital {}
+    &--tech {background-image: url('/assets/images/tech/hero.jpg');}
     &--green {}
    
 }

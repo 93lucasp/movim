@@ -182,6 +182,9 @@
     background-color: #fff;
     color: map-get($colors, blue_1);
 }
+.bg-gray {
+    background-color: #f8f8f8;
+}
 
 .box-shadow {
     box-shadow: 1px 4px 12px 0 rgba(50, 71, 178, 0.27);
