@@ -1,0 +1,12 @@
+
+.punti {
+    .navBar {
+        .menu {
+            &__punti {
+                a {
+                    color: map-get($colors, blue_light);
+                }
+            }
+        }
+    }
+}

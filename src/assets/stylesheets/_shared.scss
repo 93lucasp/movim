@@ -56,6 +56,13 @@
         padding:2em;
     }
 }
+.p-4 {
+    padding: 3em 4em!important;
+
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+        padding:1em!important;
+    }
+}
 
 .p-b-4 {
     padding-bottom: 4em;
@@ -216,4 +223,12 @@
 // }
 .icon {
     width: 7em;
+}
+.list-style {
+    padding-left: 30px;
+    li {
+        list-style-type: disc;
+        
+    }
+   
 }

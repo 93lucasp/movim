@@ -1,0 +1,87 @@
+<html>
+    
+    <head>
+        <title></title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    </head>
+    
+    <body class="punti">
+        <div id="app">
+    
+    
+            <nav class="navBar ">
+                <div class="container d-flex align-items-center position-relative">
+                    <a href="/"><img src="/assets/images/logo.svg" alt="Movim logo" class="logo"></a>
+                    <div class="hamburger" v-bind:class="{ 'hamburger--active': openMenu }" v-on:click="openMenu = !openMenu">
+                        <div class="hamburger__box">
+                            <div class="hamburger__inner"></div>
+                        </div>
+                    </div>
+                    <transition name="slide-fade">
+                        <ul class="menu" v-if="openMenu">
+                            <vue-item v-for="item in items" v-bind:item="item" v-on:click="active = !active"></vue-item>
+                        </ul>
+                    </transition>
+                </div>
+            </nav>
+    
+            <vue-hero class="hero hero--punti d-flex align-items-center" v-bind:hero="heros.punti"></vue-hero>
+    
+            <div class="bg-arrows-left p-t-4 p-b-4">
+                <div class="container mb-4 pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h5 class=" mb-2">Vuoi aprire il tuo punto Movim in affiliazione?
+                            </h5> 
+                            <p class=" mb-2">
+                                Sei alla ricerca di un’attività nella quale investire ma non sai cosa scegliere? 
+                            </p>
+                            <p class=" mb-2">
+                                Aprire un punto Movim conviene perché:
+                                </p>
+                                <ul class=" list-style">
+                                    <li>È economico</li>
+                                    <li>Nessun investimento nel magazzino</li>
+                                    <li>Punto vendita con un design ricercato</li>
+                                    <li>Utilizzo di un marchio registrato</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-lg-12 bg-blue1 p-4 position-relative">
+                            <div class="arrow-mask"></div>
+                            <div class="row">
+                                <div class="col-lg-7 p-4">
+                                    
+                                    <p>I punti Movim sono un punto di riferimento per le aziende limitrofe. Più che un negozio si tratta di uno showroom dove professionisti e piccole medie imprese possono recarsi per una consulenza in campo gestionale, organizzativo e pratico relativamente al noleggio a lungo termine, servizi digitali e efficentamento energetico.
+                                        Efficientamento aziendale con analisi costi per risparmio energetico, termico, telecomunicazioni e flotta aziendale.
+                                        </p>
+                                </div>
+                                <div class="col-lg-4 ml-lg-auto d-flex align-items-center justify-content-center">
+                                    <div class="bg-white text-center p-4">
+                                        <h4>Vuoi aprire il tuo punto?</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <vue-footer></vue-footer>
+        </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/js/vendors.min.js"></script>
+        <script type="text/javascript" src="./assets/js/vue-dep.js"></script>
+        <script type="text/javascript" src="./assets/js/vue.js"></script>
+        <script type="text/javascript" src="./assets/js/app.js"></script>
+    </body>
+    
+    </html>

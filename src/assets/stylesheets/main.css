@@ -5946,6 +5946,12 @@ img {
     .p-6 {
       padding: 2em; } }
 
+.p-4 {
+  padding: 3em 4em !important; }
+  @media screen and (max-width: 768px) {
+    .p-4 {
+      padding: 1em !important; } }
+
 .p-b-4 {
   padding-bottom: 4em; }
 
@@ -6072,6 +6078,11 @@ img {
 
 .icon {
   width: 7em; }
+
+.list-style {
+  padding-left: 30px; }
+  .list-style li {
+    list-style-type: disc; }
 
 .btn-blue1 {
   background-color: #3247B2;
@@ -6238,6 +6249,8 @@ img {
     background-image: url("/assets/images/contacts/hero.jpg"); }
   .hero--tech {
     background-image: url("/assets/images/tech/hero.jpg"); }
+  .hero--punti {
+    background-image: url("/assets/images/punti/hero.jpg"); }
 
 .footer {
   background-color: #F9F9F9;
