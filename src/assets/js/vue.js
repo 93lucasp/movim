@@ -19,7 +19,7 @@ var itemsNavbar = [{
         class: 'menu__tech'
     },
     {
-        text: 'Aprtura nuovi punti',
+        text: 'Apertura nuovi punti',
         link: 'nuovi-punti.html',
         class: 'menu__punti'
     },
@@ -48,6 +48,10 @@ var heros = {
     punti: {
         title: 'Vuoi aprire il tuo punto Movim?',
         subTitle: 'Sei alla ricerca di un’attività nella quale investire ma non sai cosa scegliere? '
+    },
+    tech: {
+        title: 'Presenta la tua azienda!',
+        subTitle: 'Video continuativi, intelligenze artificiali e molto altro'
     }
 };
 

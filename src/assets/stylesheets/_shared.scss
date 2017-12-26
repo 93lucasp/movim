@@ -232,3 +232,8 @@
     }
    
 }
+.link-no-style {
+    &:hover {
+        text-decoration: none;
+    }
+}

@@ -6084,6 +6084,9 @@ img {
   .list-style li {
     list-style-type: disc; }
 
+.link-no-style:hover {
+  text-decoration: none; }
+
 .btn-blue1 {
   background-color: #3247B2;
   color: #fff; }
