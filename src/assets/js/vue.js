@@ -42,7 +42,7 @@ var heros = {
         subTitle: 'Rata certa e fissa, tutti i modelli disponibili.'
     },
     energy: {
-        title: 'Efficenta la tua azienda',
+        title: 'Efficienta la tua azienda',
         subTitle: 'Garantisci un risparmio alla tua futura impresa'
     },
     punti: {
@@ -85,26 +85,20 @@ Vue.component('vue-footer', {
                 <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">\
                     <ul>\
                         <li>\
-                            <a href="">Chi siamo</a>\
+                            <a href="/nuovi-punti.html">Franchising</a>\
                         </li>\
                         <li>\
-                            <a href="">Dove siamo</a>\
-                        </li>\
-                        <li>\
-                            <a href="">Contatti</a>\
+                            <a href="/contatti.html">Contatti</a>\
                         </li>\
                     </ul>\
                 </div>\
                 <div class="col-lg-2 d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">\
                     <ul class="social">\
                         <li>\
-                            <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>\
+                            <a href="https://www.facebook.com/movimgroup" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>\
                         </li>\
                         <li>\
-                            <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>\
-                        </li>\
-                        <li>\
-                            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>\
+                            <a href="https://www.linkedin.com/company/movim-s-r-l/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>\
                         </li>\
                     </ul>\
                 </div>\

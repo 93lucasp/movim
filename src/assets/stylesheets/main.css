@@ -5884,6 +5884,9 @@ h6 {
   padding: 0;
   margin: 0; }
 
+p {
+  font-weight: 300; }
+
 li {
   list-style: none; }
 
@@ -6139,8 +6142,8 @@ img {
           text-decoration: none;
           color: #19E0FF; }
   .navBar .inner, .navBar .hamburger__inner, .navBar .hamburger__inner:before, .navBar .hamburger__inner:after {
-    width: 32px;
-    height: 3px;
+    width: 25px;
+    height: 2px;
     background-color: #fff;
     border-radius: 4px;
     position: absolute;
@@ -6148,6 +6151,8 @@ img {
     transition-duration: 0.15s;
     transition-timing-function: ease; }
   .navBar .hamburger {
+    width: 48px;
+    height: 48px;
     position: absolute;
     right: 0;
     padding: 8px;
@@ -6163,7 +6168,7 @@ img {
     border: 0;
     margin: 0;
     overflow: visible;
-    border: 1px solid #19E0FF;
+    border: 1.5px solid #19E0FF;
     border-radius: 100%;
     z-index: 9; }
     @media screen and (max-width: 992px) {
@@ -6181,6 +6186,7 @@ img {
       top: 50%;
       top: auto;
       bottom: 5px;
+      left: 4px;
       transition-duration: 0.13s;
       transition-delay: 0.13s;
       transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
@@ -6189,7 +6195,7 @@ img {
         display: block; }
       .navBar .hamburger__inner:before {
         top: -10px;
-        width: 25px;
+        width: 19px;
         transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
       .navBar .hamburger__inner:after {
         bottom: -10px;
@@ -6205,7 +6211,7 @@ img {
         transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
       .navBar .hamburger--active .hamburger__inner:before {
         top: 0;
-        width: 32px;
+        width: 25px;
         transform: rotate(-90deg);
         transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
@@ -6337,6 +6343,9 @@ img {
     .tech .bg-absolute-chat {
       left: 15px;
       right: 15px; } }
+
+.punti .navBar .menu__punti a {
+  color: #19E0FF; }
 
 .contatti .navBar .menu__contatti a {
   color: #19E0FF; }
